@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Tab3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:background="@drawable/round_black_white"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textColor="#424242"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:id="@+id/search_bar"
+            android:background="@drawable/searchbar"
+            android:layout_marginLeft="55dp"
+            android:textSize="18sp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/list"
+            android:layout_below="@id/search_bar"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/places"
+                app:singleLine="true"
+                app:singleSelection="true"/>
+
+        </HorizontalScrollView>
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/list"/>
+
+    </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        />
+
+</LinearLayout>

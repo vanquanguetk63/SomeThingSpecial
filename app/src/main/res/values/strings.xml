@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Main</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mapacts">mapacts</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string-array name="cities">
+        <item>Bà Rịa</item>
+        <item>Bạc Liêu</item>
+        <item>Bảo Lộc</item>
+        <item>Bắc Giang</item>
+        <item>Bắc Kạn</item>
+        <item>Bắc Ninh</item>
+        <item>Biên Hòa</item>
+        <item>Bến Tre</item>
+        <item>Buôn Ma Thuột</item>
+        <item>Cẩm Phả</item>
+        <item>Cà Mau</item>
+        <item>Cam Ranh</item>
+    </string-array>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="select_user">select_user</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LeftPane"
+        android:layout_width="200dp"
+        android:layout_height="500dp"
+        android:background="@drawable/left_pane_log"
+        app:layout_constraintTop_toBottomOf="@id/Header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/centerlogpane"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/Header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="ĐĂNG NHẬP"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signupbutton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-12dp"
+                android:text="ĐĂNG Kí"
+                android:textColor="@color/gay"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="30dp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="1"
+                android:hint="Email"
+                android:padding="20dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/username"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:autoSizeTextType="uniform"
+                android:hint="Mật Khấu"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/forgotpasswordtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:text="quên mật khẩu?"
+                android:textSize="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forgotpasswordtext"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/button1"
+                android:gravity="center"
+                android:text="ĐĂNG NHẬP" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

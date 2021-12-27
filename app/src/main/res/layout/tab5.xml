@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Tab1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/Headerer">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/Header"
+            android:background="@drawable/radientbg"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/accountboxl"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/accountbox"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/usernamea"
+            android:textSize="20dp"
+            android:text="lmao"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/accountboxl"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Body"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/Headerer">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editinfor"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:drawableLeft="@drawable/ic_baseline_create_24"
+            android:text="Thông tin cá nhân"
+            android:textSize="15dp"
+            android:drawablePadding="20dp"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:gravity="left"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editpassword"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@id/editinfor"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="20dp"
+            android:textSize="15dp"
+            android:text="Đổi mật khẩu"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:gravity="left"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notimanage"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@id/editpassword"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_source_24"
+            android:drawablePadding="20dp"
+            android:textSize="15dp"
+            android:text="Quản Lí Thông Báo"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:gravity="left"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@id/notimanage"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+            android:drawablePadding="20dp"
+            android:text="Đăng xuất"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:gravity="left"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
